@@ -28,6 +28,9 @@ html {
 .link {
   color: #ffffff;
   text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
 }
 
 .hero-section,
@@ -48,6 +51,7 @@ html {
 }
 
 .navigation-list li a {
+  font-family: "Open Sans";
   color: #ffffff;
   text-decoration: none;
 }
@@ -77,7 +81,7 @@ html {
   text-transform: uppercase;
   background: rgba(25, 28, 38, 0.2);
   padding: 12px 20px;
-  width: 160px;
+  width: 170px;
 }
 
 .sub-title-section {
@@ -105,19 +109,29 @@ html {
 }
 
 .text-section {
+  font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 0.02em;
   color: #555555;
 }
 
+.header-container,
+.hero-section,
+.about,
+.portfolio {
+  width: 1170px;
+  margin: 0px auto;
+}
 /* HeroSection*/
 .hero-sub-title-section {
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
+  text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
+
 .hero-title-section {
   font-family: "Raleway";
   font-weight: 700;
@@ -127,6 +141,7 @@ html {
   color: #ffffff;
 }
 .hero-text-section {
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.02em;
@@ -135,12 +150,17 @@ html {
 
 /*About Section*/
 
-.about-section-inner-container {
-  padding: 120px 100px 120px 0px;
+.about {
   display: flex;
   gap: 30px;
+  padding: 120px 100px 120px 0px;
 }
 
+.button-container {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+}
 .about .images-container {
   display: flex;
   gap: 30px;
@@ -169,6 +189,11 @@ html {
 .cards-left-side {
 }
 
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  padding: 129px 70px 120px 100px;
+}
 .card {
   width: 170px;
   height: 133px;
@@ -200,7 +225,59 @@ html {
 }
 
 /* OurBarbersSection*/
-.our-barbers .image {
+
+.our-barbers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.our-barbers-list {
+  display: flex;
+  gap: 30px;
+}
+
+.our-barbers-list li {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.icon-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: gray;
+  width: 44px;
+  height: 44px;
+}
+.icon-list-item a {
+  color: #303030;
+}
+
+.icon-list-item svg {
+  fill: currentColor;
+}
+.icon-list-item a:hover {
+  color: #ff6c00;
+}
+.barber-details {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+}
+.social-media-icons ul {
+  display: flex;
+  gap: 10px;
+}
+
+.our .our-barbers .image {
   width: 370px;
   height: 346px;
 }
